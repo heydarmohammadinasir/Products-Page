@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+}
+
+/* Tablet Screen */
+@media screen and (min-width: 768px) {
+}
+/* Laptop Screen */
+@media screen and (min-width: 1024px) {
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url(Assets/Fonts/Vazirmatn-Regular.woff2) format(woff2);
+}
+@font-face {
+  font-family: Vazir-bold;
+  src: url(Assets/Fonts/Vazirmatn-Bold.woff2) format(woff2);
+}
+@font-face {
+  font-family: IranSansWeb;
+  src: url(Assets/Fonts/IRANSansWeb\(FaNum\)_Bold.woff) format(woff2);
+}

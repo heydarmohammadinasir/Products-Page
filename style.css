@@ -1,0 +1,152 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+:root {
+  --btnbgcColor: #fff4f8;
+  --btnColor: #cc312d;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Vazir;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 0 0 0.5rem 0;
+}
+h4:hover {
+  color: blueviolet;
+}
+p {
+  font-size: 1.2rem;
+  color: #606060;
+}
+
+.product--Title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.customized--Span {
+  color: crimson;
+}
+
+.container {
+  background-color: #fff4f8;
+  padding: 2rem;
+  margin: 2rem;
+  box-shadow: 3px 3px 10px 3px #f9e4ec;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.product--Card {
+  background-color: #ffffff;
+  margin: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  transition: transform 0.5s;
+  overflow: hidden;
+}
+
+.product--Card:hover {
+  transform: translateY(5px);
+}
+
+.product--Mark {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #cc312d;
+  position: absolute;
+  backdrop-filter: blur(10px);
+  border-radius: 0.5rem;
+}
+
+.product--Image {
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  background-color: #e5e5e5;
+}
+
+.product--Footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0 0 0;
+}
+
+.product--Date {
+  font-family: IRANSansWeb;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.product--Btn {
+  background-color: var(--btnbgcColor);
+  padding: 1rem;
+  color: var(--btnColor);
+  text-decoration: none;
+  font-size: 1.4rem;
+  border-radius: 1rem;
+  transition: transform 0.5s;
+}
+
+.product--Btn:hover {
+  transform: translate(5px);
+  color: #fff;
+  background-color: #cc312d;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@font-face {
+  font-family: Vazir;
+  font-weight: 400;
+  font-style: normal;
+  src: url(Assets/Fonts/Vazirmatn-Regular.woff2) format(woff2);
+}
+
+@font-face {
+  font-family: Vazir-Bold;
+  font-weight: 700;
+  font-style: normal;
+  src: url(Assets/Fonts/Vazirmatn-Bold.woff2) format(woff2);
+}
+@font-face {
+  font-family: IranSansWeb;
+  src: url(Assets/Fonts/IRANSansWeb\(FaNum\)_Bold.woff) format(woff2);
+}

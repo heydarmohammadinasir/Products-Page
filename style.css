@@ -19,7 +19,6 @@ html {
 body {
   font-family: Vazir;
   font-size: 2rem;
-  padding: 10px;
 }
 
 h4 {
@@ -42,13 +41,14 @@ p {
 }
 
 .customized--Span {
-  color: crimson;
+  color: var(--btnColor);
 }
 
 .container {
+  max-width: 1280px;
   background-color: #fff4f8;
   padding: 2rem;
-  margin: 2rem;
+  margin: 1.5rem auto;
   box-shadow: 3px 3px 10px 3px #f9e4ec;
   border-radius: 10px;
   display: grid;
